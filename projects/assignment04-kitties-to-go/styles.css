@@ -1,0 +1,164 @@
+/*Header style*/
+header {
+  background-color: #52B2BF;
+  color:white;
+  padding:10px 10px;
+}
+/*Header font size*/
+h1{
+  font-size: 2rem;
+  margin: 2rem 5rem .5rem;
+}
+header p{
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0.5rem 5rem 2rem;
+}
+/*navigation style*/
+.header-nav {
+  background-color: lightgray;
+  padding:5px 0;
+}
+.header-nav-ul {
+  list-style: none;
+  padding:0;
+  margin: 1rem 5.5rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px; /*add space between link title*/
+}
+.header-nav-a {
+  color: #3f3f3f;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*add slash between list*/
+.header-nav-ul li::after {
+  content: " /";
+  padding: 0 10px;
+}
+.header-nav-ul li:last-child::after{
+  content: "";
+}
+body{
+  font-family: sans-serif;
+}
+/*flex box for main content*/
+.main-content {
+  display: flex;
+  gap: 50px; /*space between main content and aside content*/
+  margin: 2rem 5.5rem 0;
+}
+
+.main-container {
+  flex: 2; /*wider column*/
+}
+.main-container h2 {
+  color: #52B2BF;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.main-container p {
+  color: #3f3f3f;
+  margin-bottom: 2rem;
+  line-height: 1.6rem;
+}
+.text-blue {
+  color: #52B2BF;
+}
+/*this quote is under the main-container p so the color can't be changed. so make it more specific to override the main-container p*/
+.main-container .quote-blue {
+  margin: 5rem 0 5rem;
+  color: #52B2BF;
+  font-size: 1.3rem;
+}
+.italic-name {
+  font-style: italic;
+}
+.main-container .article-black {
+  color: #3f3f3f;
+}
+/*side section style*/
+.aside-container {
+  color: #3f3f3f;
+  flex: 1;
+}
+.aside-container p {
+  color: #3f3f3f;
+  line-height: 1.6rem;
+}
+
+.aside-nav-a {
+  color: #52B2BF;
+  text-decoration: none;
+  display: inline-block; /*use block as <a> ignore top/bottom margin*/
+  margin-bottom: 2rem;
+}
+.cat-week {
+  text-align: left;
+}
+.cat-week h3 {
+  margin-bottom: 1rem; /*space between header and image*/
+}
+.cat-week img {
+  display: block;
+  margin: 0;
+}
+.cat-week figure {
+  margin: 0; /*remove default browser spacing*/
+}
+.cat-week .caption-margin {
+  margin: 1rem 0 1rem;
+  line-height: 1.6rem;
+}
+/*footer section style*/
+/*footer image behaves like a background - do not put in html*/
+footer {
+  background-image: url("images/lesson04-mock4-footer-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-container {
+  /*background-color: #59515E;*/
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 1.5rem;
+}
+.footer-container h5 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.footer-nav-ul {
+  list-style: none;
+  padding:0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.footer-nav-a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block; /*use block as <a> ignore top/bottom margin*/
+  margin: 2rem 0 2rem;
+}
+/*add slash between list*/
+.footer-nav-ul li::after {
+  content: " /";
+  padding: 0 5px;
+}
+.footer-nav-ul li:last-child::after{
+  content: "";
+}
+.footer-copyright {
+  font-size: 0.9rem;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

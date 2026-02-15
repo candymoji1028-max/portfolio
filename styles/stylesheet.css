@@ -15,14 +15,14 @@ header {
   padding: 20px 0;
   text-align: center;
 }
-/*navigation style*/
+/*navigation style using flexbox*/
 nav ul {
   list-style: none;
   padding: 0;
   margin: 10px 0 0 0;
-  display: flex;
+  display: flex; 
   justify-content: center;
-  gap: 20px;
+  gap: 20px; 
 }
 /*navigation*/
 nav a {
@@ -47,10 +47,19 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex; /*enable flexbox*/
+  flex-wrap: wrap; /*wrapping on small screens*/
+  gap: 20px; /*spacing between project cards*/
 }
-#article li {
+/*#article li {
   margin-bottom: 25px;
+}*/
+/* using FlexBox instead */
+#article li {
+  flex: 1 1 250px; /*resize project cards depending on screen (flex-grow:1 flex-shrink 1 flex-basis 250px*/
+  margin: 0;
 }
+
 /*set style for section in article for each project*/
 #article section {
   background: #ddc0dd;
@@ -95,3 +104,42 @@ footer {
   color: white;
   margin-top: 40px;
 }
+/*Oswald google font
+// <weight>: Use a value from 200 to 700
+// <uniquifier>: Use a unique and descriptive class name*/
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; /* or 200–700 */
+  font-style: normal;
+}
+
+/*Diplomata google font*/
+.diplomata-sc-regular {
+  font-family: "Diplomata SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Bungee google font*/
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Pompiere google font*/
+.pompiere-regular {
+  font-family: "Pompiere", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  /*Bungee google font*/
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; 
+  font-style: normal;
+}
+
